@@ -2,7 +2,7 @@
 
 An elegant, modular C application for the STM32WB55 MCU that functions as a BLE peripheral device (GATT Server) with its own P2P service. The application performs encryption using ChaCha20, ChaCha20-Poly1305, or hardware-accelerated AES-GCM 256, sends data via notifications, and measures performance statistics.
 
-Pairing application for the BleScanner application: https://github.com/xvlach/BleScanner.git
+Pairing application for the BleScanner application: https://github.com/xvlach/BleScanner
 
 ---
 
@@ -113,13 +113,13 @@ Prefer using STM32CubeMX for all configurations.
 
 - **New GATT Services**:
 
-  1. Add the characteristic and configure it under "STM32\_WPAN -> BLE -> My\_P2P\_Server".
-  2. Generate code.
-  3. Update the write/notification handlers in `custom_app.c` / `custom_stm.c`.
+  - Add the characteristic and configure it under "STM32\_WPAN -> BLE -> My\_P2P\_Server".
+  - Generate code.
+  - Update the write/notification handlers in `custom_app.c` / `custom_stm.c`.
 
 - **Additional Encryption**:
 
-  1. Add your algorithm to `encrypt.c`.
+  - Add your algorithm to `encrypt.c`.
 
 - **Porting**:
 
@@ -137,7 +137,7 @@ If you need assistance, feel free to reach out: [xvlach23@vutbr.cz](mailto\:xvla
 
 An elegant, modular C application for the STM32WB55 MCU that functions as a BLE peripheral device (GATT Server) with its own P2P service. The application performs encryption using ChaCha20, ChaCha20-Poly1305, or hardware-accelerated AES-GCM 256, sends data via notifications, and measures performance statistics on test data (which can be replaced with real data).
 
-Párová aplikace k aplikaci k BleScanner: https://github.com/xvlach/BleScanner.git
+Párová aplikace k aplikaci k BleScanner: https://github.com/xvlach/BleScanner
 
 ---
 
@@ -249,13 +249,13 @@ Ideální je využívat STM32CubeMX pro veškeré konfigurace.
 
 - **Nové GATT služby**:
 
-  1. Přidání charakteristiky a její konfigurace v "STM32\_WPAN -> BLE -> My\_P2P\_Server".
-  2. Generování kódu.
-  3. Úprava handlerů zápisu/notifikací v `custom_app.c` / `custom_stm.c`.
+  - Přidání charakteristiky a její konfigurace v "STM32\_WPAN -> BLE -> My\_P2P\_Server".
+  - Generování kódu.
+  - Úprava handlerů zápisu/notifikací v `custom_app.c` / `custom_stm.c`.
 
 - **Dodatečné šifrování**:
 
-  1. Přidej svůj algoritmus do `encrypt.c`.
+  - Přidej svůj algoritmus do `encrypt.c`.
 
 - **Portování**:
 
