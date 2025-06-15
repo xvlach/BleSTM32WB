@@ -1,6 +1,6 @@
-# BLE STM32WB Application
+# BLE STM32WB Application (English)
 
-An elegant, modular C application for the STM32WB55 MCU that functions as a BLE peripheral device (GATT Server) with its **own P2P service**. The application performs encryption using ChaCha20, ChaCha20-Poly1305, or AES-GCM and sends data back via notifications.
+An elegant, modular C application for the STM32WB55 MCU that functions as a BLE peripheral device (GATT Server) with its own P2P service. The application performs encryption using ChaCha20, ChaCha20-Poly1305, or hardware-accelerated AES-GCM 256, sends data via notifications, and measures performance statistics.
 
 Pairing application for the BleScanner application: https://github.com/xvlach/BleScanner.git
 
@@ -49,8 +49,10 @@ BleSTM32WB/
 
 ## 🔧 Dependencies
 
+- **STM32WB55 Microcontroller** (or another with a comparable tech stack)
 - **STM32CubeWB** (BLE stack + HAL)
-- **mbedTLS 3.x** (included in Middlewares/Third\_Party)
+- **mbedTLS 3.6.3** (included in Middlewares/Third\_Party)
+- **X-CUBE-CRYPTOLIB 4.5** (included in Middlewares/ST)
 - **STM32CubeIDE ≥ v1.14** (or other tools compatible with `.ioc`)
 - **GCC / ARM Compiler** (depending on project configuration)
 
@@ -131,9 +133,9 @@ If you need assistance, feel free to reach out: [xvlach23@vutbr.cz](mailto\:xvla
 
 ---
 
-# BLE STM32WB aplikace
+# BLE STM32WB aplikace (Česky)
 
-Elegantní, modulární C aplikace pro STM32WB55MCU, která funguje jako BLE periferní zařízení (GATT Server) se **vlastní P2P službou**. Aplikace provádí šifrování pomocí ChaCha20, ChaCha20-Poly1305 nebo AES-GCM a posílá data zpět přes notifikace.
+An elegant, modular C application for the STM32WB55 MCU that functions as a BLE peripheral device (GATT Server) with its own P2P service. The application performs encryption using ChaCha20, ChaCha20-Poly1305, or hardware-accelerated AES-GCM 256, sends data via notifications, and measures performance statistics on test data (which can be replaced with real data).
 
 Párová aplikace k aplikaci k BleScanner: https://github.com/xvlach/BleScanner.git
 
@@ -183,8 +185,10 @@ BleSTM32WB/
 
 ## 🔧 Závislosti
 
+- **Microcontroler STM32WB55** (nebo jiný se srovantelným tech stackem)
 - **STM32CubeWB** (BLE stack + HAL)
-- **mbedTLS 3.x** (který je již součástí Middlewares/Third\_Party)
+- **mbedTLS 3.6.3** (součástí Middlewares/Third\_Party)
+- **X-CUBE-CRYPTOLIB 4.5** (součástí Middlewares/ST)
 - **STM32CubeIDE ≥ v1.14** (nebo jiné nástroje kompatibilní s `.ioc`)
 - **GCC / ARM Compiler** (podle konfigurace projektu)
 
